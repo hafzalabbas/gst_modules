@@ -57,8 +57,7 @@
                         <button name="exportB2BURCSV" string="B2BUR CSV" type="object" class="btn-success" style="margin-right:5px;margin-bottom:5px;" icon="fa-download" attrs="{'invisible': [('status','!=','ready_to_upload')]}"/>
                         <button name="exportIMPSCSV" string="IMPS CSV" type="object" class="btn-success" style="margin-right:5px;margin-bottom:5px;" icon="fa-download" attrs="{'invisible': [('status','!=','ready_to_upload')]}"/>
                         <button name="exportIMPGCSV" string="IMPG CSV" type="object" class="btn-success" style="margin-right:5px;margin-bottom:5px;" icon="fa-download" attrs="{'invisible': [('status','!=','ready_to_upload')]}"/>
-                        <!--<button name="exportHSNCSV" string="HSN CSV" type="object" class="btn-success" style="margin-right:5px;margin-bottom:5px;" icon="fa-download" attrs="{'invisible': [('status','!=','ready_to_upload')]}" groups="gstr_efiling.group_gst_admin"/>-->
-                        <!--<button name="exportJson" string="Json" type="object" class="btn-success" style="margin-right:5px;margin-bottom:5px;" icon="fa-code" attrs="{'invisible': [('status','!=','ready_to_upload')]}" groups="gstr_efiling.group_gst_admin"/>-->
+
                         <field name="invoice_lines" widget="many2many" attrs="{'readonly': [('status','!=','not_uploaded')]}"/>
                     </sheet>
                     <div class="oe_chatter">

@@ -220,7 +220,7 @@ class Gstr1Tool(models.Model):
     @api.multi
     def action_view_invoice(self):
         invoices = self.mapped('invoice_lines')
-        action = self.env.ref('gstr_efiling.customer_invoice_list_action').read()[0]
+        action = self.env.ref('gstr_efiling_report.customer_invoice_list_action').read()[0]
         if len(invoices) > 1:
             action['domain'] = [('id', 'in', invoices.ids)]
         elif len(invoices) == 1:
@@ -251,7 +251,7 @@ class Gstr1Tool(models.Model):
         #     attachments.append(self.hsn_attachment.id)
         # if self.json_attachment:
         #     attachments.append(self.json_attachment.id)
-        action = self.env.ref('gstr_efiling.gst_attachments_action').read()[0]
+        action = self.env.ref('gstr_efiling_report.gst_attachments_action').read()[0]
         if len(attachments) > 1:
             action['domain'] = [('id', 'in', attachments)]
         else:
@@ -484,7 +484,7 @@ class Gstr1Tool(models.Model):
             'view_mode': 'form',
             'view_type': 'form',
             'res_model': 'message.wizard',
-            'view_id': self.env.ref('gstr_efiling.message_wizard_form1').id,
+            'view_id': self.env.ref('gstr_efiling_report.message_wizard_form1').id,
             'res_id': partial.id,
             'type': 'ir.actions.act_window',
             'nodestroy': True,
@@ -626,7 +626,7 @@ class Gstr1Tool(models.Model):
                 'view_mode': 'form',
                 'view_type': 'form',
                 'res_model': 'message.wizard',
-                'view_id': self.env.ref('gstr_efiling.message_wizard_form1').id,
+                'view_id': self.env.ref('gstr_efiling_report.message_wizard_form1').id,
                 'res_id': partial.id,
                 'type': 'ir.actions.act_window',
                 'nodestroy': True,
@@ -642,7 +642,7 @@ class Gstr1Tool(models.Model):
                 'view_mode': 'form',
                 'view_type': 'form',
                 'res_model': 'message.wizard',
-                'view_id': self.env.ref('gstr_efiling.message_wizard_form1').id,
+                'view_id': self.env.ref('gstr_efiling_report.message_wizard_form1').id,
                 'res_id': partial.id,
                 'type': 'ir.actions.act_window',
                 'nodestroy': True,

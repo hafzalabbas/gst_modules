@@ -4,7 +4,7 @@
 <odoo>
 	<data>
 
-		<menuitem id="gst_parent_menu" name="GST" groups="account.group_account_invoice,gstr_efiling.group_gst_admin"/>
+		<menuitem id="gst_parent_menu" name="GST" groups="account.group_account_invoice,gstr_efiling_report.group_gst_admin"/>
             <menuitem  id="menu_gst_reports" name="GST Reports" parent="gst_parent_menu" sequence="2"/>
             <!--<menuitem  id="menu_dashboard" name="Dashboard" parent="gst_parent_menu" sequence="1" action="gst_dashboard_action" groups="gst_invoice.group_gst_admin"/>-->
             <menuitem  id="menu_gst_tool" name="GST TOOL" parent="gst_parent_menu" sequence="1"/>

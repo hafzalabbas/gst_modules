@@ -138,7 +138,7 @@ class gst_dashboard(models.Model):
     def action_create_new(self):
         ctx = self._context.copy()
         model = 'gstr1.tool'
-        view_id = self.env.ref('gstr_efiling.gstr1_tool_form').id
+        view_id = self.env.ref('gstr_efiling_report.gstr1_tool_form').id
         name = "GST Invoice"
         if ctx.get('obj') == 'Invoice':
             model = 'account.invoice'

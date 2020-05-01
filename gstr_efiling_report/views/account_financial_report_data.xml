@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
-<!-- See LICENSE file for full copyright and licensing details. -->
+
 <odoo>
     <data noupdate="1">
         <record id="wk_total_tax_payable_report" model="account.financial.report">
@@ -20,7 +19,7 @@
             <field name="parent_id" ref="wk_financial_report_output"/>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="type">accounts</field>
-            <field name="account_ids" eval="[(4,ref('gstr_efiling.p112321')),]"/>
+            <field name="account_ids" eval="[(4,ref('gstr_efiling_report.kp112321')),]"/>
         </record>
         <record id="wk_financial_report_cgst" model="account.financial.report">
             <field name="name">CGST</field>
@@ -28,7 +27,7 @@
             <field name="parent_id" ref="wk_financial_report_output"/>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="type">accounts</field>
-            <field name="account_ids" eval="[(4,ref('gstr_efiling.p11233')),]"/>
+            <field name="account_ids" eval="[(4,ref('gstr_efiling_report.kp11233')),]"/>
         </record>
         <record id="wk_financial_report_igst" model="account.financial.report">
             <field name="name">IGST</field>
@@ -36,7 +35,7 @@
             <field name="parent_id" ref="wk_financial_report_output"/>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="type">accounts</field>
-            <field name="account_ids" eval="[(4,ref('gstr_efiling.p11234')),]"/>
+            <field name="account_ids" eval="[(4,ref('gstr_efiling_report.kp11234')),]"/>
         </record>
 
         <record id="wk_financial_report_input" model="account.financial.report">
@@ -52,7 +51,7 @@
             <field name="sign" eval="-1" />
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="type">accounts</field>
-            <field name="account_ids" eval="[(4,ref('gstr_efiling.p100511')),]"/>
+            <field name="account_ids" eval="[(4,ref('gstr_efiling_report.kp100511')),]"/>
         </record>
         <record id="wk_financial_report_in_cgst" model="account.financial.report">
             <field name="name">CGST</field>
@@ -60,7 +59,7 @@
             <field name="sign" eval="-1" />
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="type">accounts</field>
-            <field name="account_ids" eval="[(4,ref('gstr_efiling.p10052')),]"/>
+            <field name="account_ids" eval="[(4,ref('gstr_efiling_report.kp10052')),]"/>
         </record>
         <record id="wk_financial_report_in_igst" model="account.financial.report">
             <field name="name">IGST</field>
@@ -68,7 +67,7 @@
             <field name="sign" eval="-1" />
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="type">accounts</field>
-            <field name="account_ids" eval="[(4,ref('gstr_efiling.p10053')),]"/>
+            <field name="account_ids" eval="[(4,ref('gstr_efiling_report.kp10053')),]"/>
         </record>
 
     </data>

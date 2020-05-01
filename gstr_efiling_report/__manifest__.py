@@ -20,10 +20,8 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','account','uom',
-        'l10n_in',
-        'account_tax_python',
-    ],
+    'depends': ['base','account','account_tax_python','uom', 'l10n_in',
+        ],
     'data': [
         'data/ir_model_fields_data.xml',
         'data/port.code.csv',
@@ -59,9 +57,6 @@
         'views/unit_quantity_code_view.xml',
         'views/uom_map_view.xml',
         'views/gst_action_view.xml',
-
-
-        # 'views/gstr2.xml',
         'views/gst_menu_view.xml',
 
         'views/views.xml',

@@ -68,7 +68,7 @@ class InvoiceTypeWizard(models.TransientModel):
                 'view_mode': 'form',
                 'view_type': 'form',
                 'res_model': 'message.wizard',
-                'view_id': self.env.ref('gstr_efiling.message_wizard_form1').id,
+                'view_id': self.env.ref('gstr_efiling_report.message_wizard_form1').id,
                 'res_id': partial.id,
                 'type': 'ir.actions.act_window',
                 'nodestroy': True,

@@ -10,11 +10,11 @@
             <field name="arch" type="xml">
                 <tree string="GSTR" default_order='create_date desc'>
                     <field name="name"/>
-                    <field name="period_id" groups="gstr_efiling.group_gst_admin"/>
-                    <field name="date_from" groups="gstr_efiling.group_gst_admin"/>
-                    <field name="date_to" groups="gstr_efiling.group_gst_admin"/>
-                    <field name="status" groups="gstr_efiling.group_gst_admin"/>
-                    <field name="create_date" groups="gstr_efiling.group_gst_admin,gstr_efiling.group_gst_user"/>
+                    <field name="period_id" />
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                    <field name="status" />
+                    <field name="create_date"/>
                 </tree>
             </field>
         </record>
